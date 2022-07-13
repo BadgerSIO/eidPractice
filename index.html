@@ -40,11 +40,24 @@
           </p>
           <button class="btn1">Explore More</button>
         </div>
-        <div class="video w-5 tac">
-          <img src="images/videothumbnail.png" alt="" class="thumb" />
-          <img src="images/video_play_button.svg" alt="" class="thumbplay" />
+        <div id="video" class="w-5 tac">
+          <video
+            id="video1"
+            src="images/cattle.mp4"
+            poster="images/videothumbnail.png"
+          ></video>
+          <button class="thumbplay" onclick="playPause()">
+            <img src="images/video_play_button.svg" alt="" />
+          </button>
         </div>
       </div>
     </section>
+    <script>
+      var myVideo = document.getElementById("video1");
+      function playPause() {
+        if (myVideo.paused) myVideo.play();
+        else myVideo.pause();
+      }
+    </script>
   </body>
 </html>

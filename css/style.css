@@ -107,19 +107,24 @@ a {
 }
 /* lives part css  */
 
-.video {
+#video {
   position: relative;
   z-index: 19;
 }
+#video video {
+  height: 500px;
+  width: 100%;
+}
 .thumbplay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  left: 50%;
   z-index: 20;
   padding: 20px;
+  border: none;
   background: #ef233b9d;
   border-radius: 100%;
+  cursor: pointer;
 }
