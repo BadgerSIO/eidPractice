@@ -37,6 +37,9 @@ a {
 .py-13 {
   padding: 130px 0;
 }
+.py-2 {
+  padding: 20px 0;
+}
 
 .btn1 {
   background: #ef233c;
@@ -77,6 +80,7 @@ a {
   background-repeat: no-repeat;
   color: #fff;
   position: relative;
+  background-attachment: fixed;
 }
 #hero::after {
   content: "";
@@ -168,4 +172,84 @@ a {
   font-weight: 400;
   color: #707070;
   padding-top: 10px;
+}
+/* image box css  */
+#imagebox {
+  padding-bottom: 100px;
+}
+.imgbox {
+  justify-content: space-evenly;
+}
+.imgbox > div {
+  width: 30%;
+  background: url("../images/imgboxbg.jpg");
+  background-size: cover;
+  padding: 58px 30px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 30;
+}
+.imgbox > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 30;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.boxcontent {
+  text-align: center;
+  z-index: 99;
+  position: relative;
+}
+.boxcontent h4 {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  transform: translateY(100px);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  text-shadow: 2px 2px 2px #000;
+}
+.boxcontent p {
+  font-size: 16px;
+  color: #ffffffd2;
+  opacity: 0;
+  transform: translateY(35px);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.boxcontent button {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateY(30px);
+}
+.imgbox div:hover .boxcontent button {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+}
+
+.imgbox div:hover .boxcontent p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.imgbox div:hover .boxcontent h4 {
+  transform: translateY(0);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.imgbox div:hover::after {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
 }
