@@ -43,16 +43,19 @@ a {
 
 .btn1 {
   background: #ef233c;
-  font-family: "Inter", sans-serif;
   padding: 16px 16px;
-  font-size: 20px;
-  font-weight: 600;
   border: none;
   border-radius: 5px;
-  color: #fff;
   cursor: pointer;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
+}
+.btn1 a {
+  font-family: "Inter", sans-serif;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
 }
 .btn1:hover {
   transform: translateY(5px);
@@ -252,4 +255,48 @@ a {
   opacity: 1;
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
+}
+
+/* fund box css start  */
+.zakatfund {
+  justify-content: space-between;
+}
+.zakatfund > div {
+  width: 30%;
+  padding-bottom: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+.zakatfund div img {
+  width: 100%;
+}
+.fundcontent {
+  padding: 20px;
+}
+.fundcontent h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #121212;
+}
+.fundcontent p {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #707070;
+}
+footer {
+  background: #0b0d17;
+  padding: 50px 0;
+  text-align: center;
+}
+footer h1 {
+  color: #ef233c;
+  font-family: "Lobster", cursive;
+  padding-bottom: 35px;
+}
+footer h4 {
+  color: #d9dbe1;
+  font-weight: 400;
+  font-size: 14px;
 }

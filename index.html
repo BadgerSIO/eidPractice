@@ -24,7 +24,7 @@
             referrentur, at eam falli deterruisset. No duo populo<br />
             animal noluisse, enim
           </p>
-          <button class="btn1" href="#">Donate Now</button>
+          <button class="btn1"><a href="#">Donate Now</a></button>
         </div>
       </div>
     </header>
@@ -41,13 +41,15 @@
             esse possit<br />
             referrentur, at eam falli deterruisset.
           </p>
-          <button class="btn1">Explore More</button>
+
+          <button class="btn1"><a href="#">Explore More</a></button>
         </div>
         <div id="video" class="w-5 tac">
           <video
             id="video1"
             src="images/cattle.mp4"
             poster="images/videothumbnail.png"
+            onended="videoEnded(this)"
           ></video>
           <button class="thumbplay" onclick="playPause()">
             <img src="images/video_play_button.svg" alt="" />
@@ -71,7 +73,7 @@
             esse possit<br />
             referrentur, at eam falli deterruisset.
           </p>
-          <button class="btn1">Explore More</button>
+          <button class="btn1"><a href="#">Explore More</a></button>
         </div>
       </div>
     </section>
@@ -145,7 +147,7 @@
               Blanditiis quasi vero magnam odit expedita numquam enim illo iure
               delectus optio.
             </p>
-            <button class="btn1">See More</button>
+            <button class="btn1"><a href="#">See More</a></button>
           </div>
         </div>
         <div class="imgbox2">
@@ -156,7 +158,7 @@
               Blanditiis quasi vero magnam odit expedita numquam enim illo iure
               delectus optio.
             </p>
-            <button class="btn1">See More</button>
+            <button class="btn1"><a href="#">See More</a></button>
           </div>
         </div>
         <div class="imgbox3">
@@ -167,7 +169,7 @@
               Blanditiis quasi vero magnam odit expedita numquam enim illo iure
               delectus optio.
             </p>
-            <button class="btn1">See More</button>
+            <button class="btn1"><a href="#">See More</a></button>
           </div>
         </div>
       </div>
@@ -176,26 +178,72 @@
     <!-- reward part start  -->
     <section id="reward" class="py-13">
       <div class="container titles">
-        <h2 class="tac">Extend Your Hand of Charity. Earn<br> Rewards for the Hereafter</h2>
+        <h2 class="tac">
+          Extend Your Hand of Charity. Earn<br />
+          Rewards for the Hereafter
+        </h2>
         <p class="tac">
           Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
           falli<br />
           deterruisset. No duo populo animal noluisse, enim
         </p>
         <div class="zakatfund d-flex">
-          <div class="fundbox1">h</div>
-          <div class="fundbox2">h</div>
-          <div class="fundbox3">h</div>
+          <div class="fundbox1">
+            <img src="images/zakatfund.jpg" alt="Collecting Zakat Fund" />
+            <div class="fundcontent">
+              <h2>Zakat Fund</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+                quos rerum obcaecati laborum rem fugit sit voluptatem velit.
+                Iusto, harum!
+              </p>
+              <button class="btn1"><a href="#">Donate Now</a></button>
+            </div>
+          </div>
+          <div class="fundbox2">
+            <img src="images/zakatfund.jpg" alt="Collecting Zakat Fund" />
+            <div class="fundcontent">
+              <h2>Zakat Fund</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+                quos rerum obcaecati laborum rem fugit sit voluptatem velit.
+                Iusto, harum!
+              </p>
+              <button class="btn1"><a href="#">Donate Now</a></button>
+            </div>
+          </div>
+          <div class="fundbox3">
+            <img src="images/zakatfund.jpg" alt="Collecting Zakat Fund" />
+            <div class="fundcontent">
+              <h2>Zakat Fund</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+                quos rerum obcaecati laborum rem fugit sit voluptatem velit.
+                Iusto, harum!
+              </p>
+              <button class="btn1"><a href="#">Donate Now</a></button>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
     <!-- reward part end  -->
+    <!-- footer part start  -->
+    <footer>
+      <div class="container">
+        <h1>Eid Ul Adha</h1>
+        <h4>I am gonna do it</h4>
+      </div>
+    </footer>
+    <!-- footer part end  -->
     <script>
       var myVideo = document.getElementById("video1");
       function playPause() {
         if (myVideo.paused) myVideo.play();
         else myVideo.pause();
+      }
+      function videoEnded(video) {
+        video.load();
       }
     </script>
   </body>
