@@ -175,7 +175,7 @@ a {
 }
 /* image box css  */
 #imagebox {
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 .imgbox {
   justify-content: space-evenly;
